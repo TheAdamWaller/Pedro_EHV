@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Parcial</title>
+    <link rel="stylesheet" href="stylesexam.css">
+</head>
+<body>
+    <section id="parte_1-1">
+    <!-- Título, subtítulo y sub-subtítulo -->
+    <h1>Parte 1.1</h1>
+    <h2>Universidad Cristóbal Colón</h2>
+    <h3>Evaluación Parcial</h3>
+    <h4>Pedro Everardo Hernández Valerio</h4>
+    </section>
+    <section id="parte_1-2">
+
+    <!-- Logotipo de la UCC -->
+    <h1>Parte 1.2</h1>
+    <img src="logo_ucc.png" alt="Logotipo de la Universidad Cristóbal Colón">
+    </section>
+    
+
+    <!-- Lista ordenada en orden inverso -->
+    <section id="parte_1-3">
+    <h1>Parte 1.3</h1>
+    <h2>Top 5 Películas</h2>
+    <ol reversed>
+        <li>Aún estoy aquí</li>
+        <li>La Chica de la Aguja</li>
+        <li>Emilia Pérez</li>
+        <li>La Semilla de la Higuera Sagrada</li>
+        <li>Flow</li>
+    </ol>
+</section>
+
+
+    <!-- Tabla de datos -->
+    <section id="parte_1-4">
+    <h1>Parte 1.4</h1>
+    <h2>Tabla</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Rango de Edades</th>
+                <th colspan="2">Mujeres</th>
+                <th></th>
+                <th colspan="2">Hombres</th>
+                <th></th>
+                <th colspan="2">Promedio General</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Estatura</th>
+                <th>Peso</th>
+                <th></th>
+                <th>Estatura</th>
+                <th>Peso</th>
+                <th></th>
+                <th>Estatura</th>
+                <th>Peso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5-10</td>
+                <td>0.9</td>
+                <td>35</td>
+                <td></td>
+                <td>1.1</td>
+                <td>38</td>
+                <td></td>
+                <td>1.0</td>
+                <td>36.5</td>
+            </tr>
+            <tr>
+                <td>11-15</td>
+                <td>0.98</td>
+                <td>40</td>
+                <td></td>
+                <td>1.6</td>
+                <td>65</td>
+                <td></td>
+                <td>1.3</td>
+                <td>52.5</td>
+            </tr>
+            <tr>
+                <td>16-20</td>
+                <td>1.50</td>
+                <td>45</td>
+                <td></td>
+                <td>1.72</td>
+                <td>70</td>
+                <td></td>
+                <td>1.61</td>
+                <td>57.5</td>
+            </tr>
+            <tr>
+                <td>21-30</td>
+                <td>1.60</td>
+                <td>50</td>
+                <td></td>
+                <td>1.7</td>
+                <td>75</td>
+                <td></td>
+                <td>1.65</td>
+                <td>62.5</td>
+            </tr>
+            <tr>
+                <td>31-35</td>
+                <td>1.67</td>
+                <td>64</td>
+                <td></td>
+                <td>1.73</td>
+                <td>78</td>
+                <td></td>
+                <td>1.7</td>
+                <td>71</td>
+            </tr>
+            <tr>
+                <td>35-40</td>
+                <td>1.62</td>
+                <td>60</td>
+                <td></td>
+                <td>1.71</td>
+                <td>80</td>
+                <td></td>
+                <td>1.69</td>
+                <td>70</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+    <!-- Crear un Formulario -->
+    <section id="parte_1-5">
+    <h1>Parte 1.5</h1>
+    <h2>Formulario de Registro</h2>
+    <form action="#" method="POST">
+        
+        <!-- Nombre Completo -->
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <!-- Correo Electrónico -->
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <!-- Edad -->
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="1" required>
+
+        <!-- Fecha de Nacimiento -->
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+        <!-- Estado Civil -->
+        <label>Estado Civil:</label>
+        <input type="radio" id="soltero" name="estado_civil" value="Soltero">
+        <label for="soltero">Soltero</label>
+
+        <input type="radio" id="casado" name="estado_civil" value="Casado">
+        <label for="casado">Casado</label>
+
+        <input type="radio" id="otro" name="estado_civil" value="Otro">
+        <label for="otro">Otro</label>
+
+        <!-- Intereses -->
+        <label>Intereses:</label>
+        <input type="checkbox" id="deportes" name="intereses" value="Deportes">
+        <label for="deportes">Deportes</label>
+
+        <input type="checkbox" id="musica" name="intereses" value="Música">
+        <label for="musica">Música</label>
+
+        <input type="checkbox" id="tecnologia" name="intereses" value="Tecnología">
+        <label for="tecnologia">Tecnología</label>
+
+        <input type="checkbox" id="lectura" name="intereses" value="Lectura">
+        <label for="lectura">Lectura</label>
+
+        <!-- Lugar de Residencia -->
+        <label for="residencia">Lugar de Residencia:</label>
+        <select id="residencia" name="residencia">
+            <option value="CDMX">Ciudad de México</option>
+            <option value="Guadalajara">Guadalajara</option>
+            <option value="Monterrey">Monterrey</option>
+            <option value="Otro">Otro</option>
+        </select>
+
+        <!-- Botones de Enviar y Cancelar -->
+        <div class="botones">
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+        </div>
+    </form>
+</section>
+
+<!-- Seccion 2, Parte 1 -->
+<section id="parte_2-1">
+    <h1>Parte 2.1</h1>
+    <h2>Universidad Cristóbal Colón</h2>
+    <h3>Evaluacion Parcial</h3>
+    <h4>Pedro Everardo Hernandez Valerio</h4>
+</section>
+
+<!-- Seccion 2, Parte 2 -->
+<section id="parte_2-2">
+    <h1>Parte 2.2</h1>
+    <div class="contenedor-imagenes">
+        <img src="imagen1.jpg" alt="Olor a café">
+        <img src="imagen2.jpg" alt="Olor a vainilla">
+        <img src="imagen3.jpg" alt="Olor a bosque">
+    </div>
+</section>
+
+<!-- Seccion 2, Parte 3 -->
+<section id="parte_2-3">
+    <h1>Parte 2.3</h1>
+    <div class="tarjeta">
+    <img src="planta.jpg" alt="Sábila">
+        <h2>Aloe Vera</h2>
+        <div class="descripcion">
+        <p>La sábila también se conoce como aloe vera, aloe barbadensis miller, aloe capensis, aloe ferox, entre otros. Nombre botánico Aloe barbadensis (latín), Aloe capensis (latín), Aloe ferox (latín), Aloe vera (latín). Otros nombres en inglés Barbados aloe, Curaçao aloe, Medicinal aloe, Unguentine cactus. Origen La sábila es originaria de la península Arábiga y crece en suelos arenosos, secos, arcillosos y calcáreos. Usos La sábila se ha utilizado en cremas y preparados para tratar afecciones de la piel. </p>
+    </div>
+</div>
+</section>
+
+
+<section id="parte_2-5">
+    <h1>Parte 2.5</h1>
+    <div class="bandera francia"></div>
+<div class="bandera alemania"></div>
+<div class="bandera italia"></div>
+</section>
+
+</body>
+</html>
